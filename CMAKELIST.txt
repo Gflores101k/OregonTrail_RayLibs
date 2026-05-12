@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.16)
+project(OregonTrail)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(OregonTrail
+    src/main.cpp
+    src/button.cpp
+    src/gui_menu.cpp
+)
+
+target_link_libraries(raylib opengl32 gdi32 winmm)
